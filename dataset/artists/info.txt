@@ -1,0 +1,1 @@
+This folder contains a list of artists whose albums will be fetched from Wikipedia.
