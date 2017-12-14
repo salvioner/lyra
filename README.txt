@@ -7,9 +7,10 @@ SETUP INSTRUCTIONS after cloning this repository in a local folder:
 2) Download the dataset
 * Either clone the repository https://github.com/salvioner/lyra-dataset.git inside the "dataset" folder
 * Or regenerate the dataset from scratch (last tested: February 2016)
-    - run dataset/fetchAlbums.py
-    - run dataset/fetchSongs.py
-    NOTE: this will take quite a long time, since the script will attempt to download more than 10.000 song texts from lyricswikia. A working Internet connection is required for both scripts to work.
+    - navigate to folder "dataset"
+    - run "python fetchAlbums.py" and wait
+    - run "python fetchSongs.py" and wait
+    NOTE: this will take quite a long time, since the script will attempt to download artist names, album names and song lyrics for more than 10.000 songs. A working Internet connection is required for both scripts to work.
 
 3) Download additional packages (I suggest the use of Anaconda distribution of Python, which includes almost all of the required packages: https://www.anaconda.com/what-is-anaconda/)
 * Package requirements for alg.py:
