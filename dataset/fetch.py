@@ -7,7 +7,7 @@ def getFetchedTitle(s):
     else:
         # ultima parola dell'elenco
         return s
-        
+
 def filterTagNameSequence(tags, coll):
     coll_ = []  # istanzio una collection vuota
     for el in coll:
@@ -21,7 +21,7 @@ def filterTagNameSequence(tags, coll):
     else:
         # restituisco la nuova lista di tag
         return coll_
-        
+
 def getParagraphById(body, title_span_id):
     title_span = body.find(id=title_span_id)
     if title_span == None:
@@ -33,27 +33,11 @@ def getParagraphById(body, title_span_id):
     paragraph = [title]
     for el in title.find_next_siblings():
         if el == nextTitle:
-            break    
+            break
         else:
-            paragraph.append(el)            
+            paragraph.append(el)
     return paragraph
-    
-    
+
+
 def songFileName(artista, traccia):
     return artista + "_" + traccia + ".lyr"
-    
-    
-    
-"""
-    added = False
-    while added == False and k in range(step - 1):
-        try:
-            create_lyrfile = os.open(filepath, os.O_CREAT)
-            os.close(create_lyrfile)
-        except OSError:
-            t = tracce.pop()
-            i += 1
-            added = False
-        else:
-            added = True
-"""
